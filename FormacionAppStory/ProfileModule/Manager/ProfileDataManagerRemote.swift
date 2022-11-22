@@ -15,6 +15,10 @@ class ProfileDataManagerRemote: ProfileDataManagerProtocol {
         guard let url = URL(string: "") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
+        request.setValue("application/json; charset=utf8", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/x-www-form-urlencoded; charset=utf8", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("no-cache", forHTTPHeaderField: "cache-control")
 
         URLSession.shared.dataTask(with: request) { data, _, _ in
             guard let data = data else { return }

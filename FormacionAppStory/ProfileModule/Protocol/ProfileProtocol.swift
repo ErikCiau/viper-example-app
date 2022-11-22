@@ -10,12 +10,12 @@ import UIKit
 
 protocol ProfileRouterProtocol: AnyObject {
     static func createModule() -> UIViewController
-    func pushDetailScreen(from view: ProfileViewProtocol)
 }
 
 protocol ProfileViewProtocol: AnyObject {
     var presenter: ProfilePresenterProtocol? { get set }
     // presenter -> View
+    func showProfile(_ profile: ProfileEntity)
 }
 
 protocol ProfilePresenterProtocol: AnyObject {
@@ -23,15 +23,17 @@ protocol ProfilePresenterProtocol: AnyObject {
     var interactor: ProfileInteractorInputProtocol? { get set }
     var router: ProfileRouterProtocol? { get set }
     //    View -> Presenter
-    func selectedDetail()
+    func viewDidLoad()
 }
 
 protocol ProfileInteractorInputProtocol {
     var presenter: ProfileInteractorOutputProtocol? { get set }
-    var localManager: ProfileDataManager? { get set }
+    var dataManager: ProfileDataManagerProtocol? { get set }
     // presenter -> Interactor
+    func loadProfile()
 }
 
 protocol ProfileInteractorOutputProtocol {
     // Interactor -> presenter
+    func didLoadProfile(_ profile: ProfileEntity)
 }

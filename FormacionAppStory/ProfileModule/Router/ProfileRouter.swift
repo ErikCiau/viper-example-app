@@ -24,19 +24,8 @@ class ProfileRouter: ProfileRouterProtocol {
         presenter.interactor = interactor
         presenter.router = router
         interactor.presenter = presenter
-        interactor.localManager = ProfileDataManager()
+        interactor.dataManager = ProfileDataManagerRemote.shared
 
         return view
-    }
-
-    func pushDetailScreen(from view: ProfileViewProtocol) {
-        if let superViewController = view as? UIViewController {
-            superViewController
-                .navigationController?
-                .pushViewController(
-                    ProfileDetailRouter.createModule(),
-                    animated: true
-                )
-        }
     }
 }

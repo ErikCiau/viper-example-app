@@ -9,5 +9,14 @@ import Foundation
 
 class ProfileInteractor: ProfileInteractorInputProtocol {
     var presenter: ProfileInteractorOutputProtocol?
-    var localManager: ProfileDataManager?
+    var dataManager: ProfileDataManagerProtocol?
+
+    func loadProfile() {
+        dataManager?.getUserProfile(completion: { profile in
+            self.presenter?.didLoadProfile(profile)
+        }, failure: { error in
+            // anything bussines logic for handle errors
+            fatalError("Error to load user")
+        })
+    }
 }

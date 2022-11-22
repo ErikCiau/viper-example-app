@@ -12,11 +12,13 @@ class ProfilePresenter: ProfilePresenterProtocol {
     var interactor: ProfileInteractorInputProtocol?
     var router: ProfileRouterProtocol?
     
-    func selectedDetail() {
-        router?.pushDetailScreen(from: view!)
+    func viewDidLoad() {
+        interactor?.loadProfile()
     }
 }
 
 extension ProfilePresenter: ProfileInteractorOutputProtocol {
-    
+    func didLoadProfile(_ profile: ProfileEntity) {
+        view?.showProfile(profile)
+    }
 }

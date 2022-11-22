@@ -11,7 +11,6 @@
 		931006CA2927E04100ACB9CD /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006C92927E04100ACB9CD /* ProfileInteractor.swift */; };
 		931006CC2927E04D00ACB9CD /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006CB2927E04D00ACB9CD /* ProfilePresenter.swift */; };
 		931006CE2927E06100ACB9CD /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006CD2927E06100ACB9CD /* ProfileRouter.swift */; };
-		931006D02927E06F00ACB9CD /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006CF2927E06F00ACB9CD /* ProfileManager.swift */; };
 		931006D22927E07B00ACB9CD /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006D12927E07B00ACB9CD /* ProfileEntity.swift */; };
 		931006D42927E08600ACB9CD /* ProfileProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006D32927E08600ACB9CD /* ProfileProtocol.swift */; };
 		931006DD2927E81500ACB9CD /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931006DB2927E81500ACB9CD /* Profile+CoreDataClass.swift */; };
@@ -21,6 +20,8 @@
 		934EECBC29275A97003F735D /* FormacionAppStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 934EECBA29275A97003F735D /* FormacionAppStory.xcdatamodeld */; };
 		934EECBE29275A9B003F735D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934EECBD29275A9B003F735D /* Assets.xcassets */; };
 		934EECC129275A9B003F735D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934EECBF29275A9B003F735D /* LaunchScreen.storyboard */; };
+		937B7A64292D06A20018EE32 /* ProfileDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B7A63292D06A20018EE32 /* ProfileDataManagerProtocol.swift */; };
+		937B7A66292D07410018EE32 /* ProfileDataManagerRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */; };
 		93B5EB2A29297677003AEEA4 /* ProfileView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B5EB2929297677003AEEA4 /* ProfileView.storyboard */; };
 		93B5EB3329297D07003AEEA4 /* ProfileDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5EB3229297D07003AEEA4 /* ProfileDetailProtocol.swift */; };
 		93B5EB372929812A003AEEA4 /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B5EB362929812A003AEEA4 /* ProfileDetailVC.swift */; };
@@ -35,7 +36,6 @@
 		931006C92927E04100ACB9CD /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		931006CB2927E04D00ACB9CD /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		931006CD2927E06100ACB9CD /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
-		931006CF2927E06F00ACB9CD /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		931006D12927E07B00ACB9CD /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
 		931006D32927E08600ACB9CD /* ProfileProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocol.swift; sourceTree = "<group>"; };
 		931006DB2927E81500ACB9CD /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		934EECBD29275A9B003F735D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		934EECC029275A9B003F735D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		934EECC229275A9B003F735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937B7A63292D06A20018EE32 /* ProfileDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerProtocol.swift; sourceTree = "<group>"; };
+		937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerRemote.swift; sourceTree = "<group>"; };
 		93B5EB2929297677003AEEA4 /* ProfileView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileView.storyboard; sourceTree = "<group>"; };
 		93B5EB3229297D07003AEEA4 /* ProfileDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailProtocol.swift; sourceTree = "<group>"; };
 		93B5EB362929812A003AEEA4 /* ProfileDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
@@ -117,7 +119,7 @@
 		931006D82927E0AA00ACB9CD /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				931006CF2927E06F00ACB9CD /* ProfileManager.swift */,
+				937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				931006D32927E08600ACB9CD /* ProfileProtocol.swift */,
+				937B7A63292D06A20018EE32 /* ProfileDataManagerProtocol.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -157,8 +160,7 @@
 		934EECB029275A97003F735D /* FormacionAppStory */ = {
 			isa = PBXGroup;
 			children = (
-				931006DB2927E81500ACB9CD /* Profile+CoreDataClass.swift */,
-				931006DC2927E81500ACB9CD /* Profile+CoreDataProperties.swift */,
+				93F4EFA42929E9F600A65870 /* Common */,
 				931006C72927E01C00ACB9CD /* ProfileModule */,
 				93B5EB2B29297AD5003AEEA4 /* ProfileDetailModule */,
 				93B5EB2C29297AF9003AEEA4 /* App */,
@@ -230,6 +232,15 @@
 				93B5EB3229297D07003AEEA4 /* ProfileDetailProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		93F4EFA42929E9F600A65870 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				931006DB2927E81500ACB9CD /* Profile+CoreDataClass.swift */,
+				931006DC2927E81500ACB9CD /* Profile+CoreDataProperties.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +326,12 @@
 				93B5EB372929812A003AEEA4 /* ProfileDetailVC.swift in Sources */,
 				934EECB229275A97003F735D /* AppDelegate.swift in Sources */,
 				931006CC2927E04D00ACB9CD /* ProfilePresenter.swift in Sources */,
+				937B7A66292D07410018EE32 /* ProfileDataManagerRemote.swift in Sources */,
 				931006DD2927E81500ACB9CD /* Profile+CoreDataClass.swift in Sources */,
+				937B7A64292D06A20018EE32 /* ProfileDataManagerProtocol.swift in Sources */,
 				934EECBC29275A97003F735D /* FormacionAppStory.xcdatamodeld in Sources */,
 				931006DE2927E81500ACB9CD /* Profile+CoreDataProperties.swift in Sources */,
 				931006CA2927E04100ACB9CD /* ProfileInteractor.swift in Sources */,
-				931006D02927E06F00ACB9CD /* ProfileManager.swift in Sources */,
 				934EECB429275A97003F735D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

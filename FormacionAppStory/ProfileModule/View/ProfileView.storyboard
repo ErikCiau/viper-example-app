@@ -234,7 +234,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="14F-YG-Sbb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="0Hn-Ry-ntm"/>
                             <constraint firstItem="sQR-te-QSR" firstAttribute="top" secondItem="14F-YG-Sbb" secondAttribute="bottom" constant="16" id="Gpo-eM-E2L"/>

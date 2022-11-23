@@ -8,5 +8,6 @@
 import Foundation
 
 protocol ProfileDataManagerProtocol {
-    func getUserProfile(completion: @escaping (_ profile: ProfileEntity) -> Void, failure: @escaping (_ error: NSError) -> Void)
+    func getUserProfile(completion: @escaping (Result<ProfileEntity, NSError>) -> Void)
+    func createUserProfile(completion: @escaping (Result<ProfileEntity, NSError>) -> Void)
 }

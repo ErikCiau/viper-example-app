@@ -24,6 +24,7 @@ protocol ProfilePresenterProtocol: AnyObject {
     var router: ProfileRouterProtocol? { get set }
     //    View -> Presenter
     func viewDidLoad()
+    func loadBuildProfile()
 }
 
 protocol ProfileInteractorInputProtocol {
@@ -31,9 +32,11 @@ protocol ProfileInteractorInputProtocol {
     var dataManager: ProfileDataManagerProtocol? { get set }
     // presenter -> Interactor
     func loadProfile()
+    func buildProfile()
 }
 
 protocol ProfileInteractorOutputProtocol {
     // Interactor -> presenter
     func didLoadProfile(_ profile: ProfileEntity)
+    func didLoadBuildProfile(_ profile: ProfileEntity)
 }

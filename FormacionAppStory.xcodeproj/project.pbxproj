@@ -20,6 +20,7 @@
 		934EECBC29275A97003F735D /* FormacionAppStory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 934EECBA29275A97003F735D /* FormacionAppStory.xcdatamodeld */; };
 		934EECBE29275A9B003F735D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934EECBD29275A9B003F735D /* Assets.xcassets */; };
 		934EECC129275A9B003F735D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934EECBF29275A9B003F735D /* LaunchScreen.storyboard */; };
+		936C48C5292D9A47005E9709 /* ProfileDataManagerLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936C48C4292D9A47005E9709 /* ProfileDataManagerLocal.swift */; };
 		937B7A64292D06A20018EE32 /* ProfileDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B7A63292D06A20018EE32 /* ProfileDataManagerProtocol.swift */; };
 		937B7A66292D07410018EE32 /* ProfileDataManagerRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */; };
 		937B7A68292D0AAC0018EE32 /* ProfileDataManagerWithAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937B7A67292D0AAC0018EE32 /* ProfileDataManagerWithAlamofire.swift */; };
@@ -50,6 +51,7 @@
 		934EECBD29275A9B003F735D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		934EECC029275A9B003F735D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		934EECC229275A9B003F735D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		936C48C4292D9A47005E9709 /* ProfileDataManagerLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerLocal.swift; sourceTree = "<group>"; };
 		937B7A63292D06A20018EE32 /* ProfileDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerProtocol.swift; sourceTree = "<group>"; };
 		937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerRemote.swift; sourceTree = "<group>"; };
 		937B7A67292D0AAC0018EE32 /* ProfileDataManagerWithAlamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManagerWithAlamofire.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				937B7A65292D07410018EE32 /* ProfileDataManagerRemote.swift */,
 				937B7A67292D0AAC0018EE32 /* ProfileDataManagerWithAlamofire.swift */,
+				936C48C4292D9A47005E9709 /* ProfileDataManagerLocal.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				931006CE2927E06100ACB9CD /* ProfileRouter.swift in Sources */,
 				931006C52927E01700ACB9CD /* ProfileVC.swift in Sources */,
 				93B5EB3B292981D9003AEEA4 /* ProfileDetailInteractor.swift in Sources */,
+				936C48C5292D9A47005E9709 /* ProfileDataManagerLocal.swift in Sources */,
 				93B5EB372929812A003AEEA4 /* ProfileDetailVC.swift in Sources */,
 				934EECB229275A97003F735D /* AppDelegate.swift in Sources */,
 				931006CC2927E04D00ACB9CD /* ProfilePresenter.swift in Sources */,

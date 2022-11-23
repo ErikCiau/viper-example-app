@@ -11,7 +11,7 @@ class ProfileDataManagerRemote: ProfileDataManagerProtocol {
     private init() {}
     public static let shared = ProfileDataManagerRemote()
 
-    func getUserProfile(completion: @escaping (ProfileEntity) -> Void, failure: @escaping (NSError) -> Void) {
+    func getUserProfile(completion: @escaping (Result<ProfileEntity, NSError>) -> Void) {
         guard let url = URL(string: "") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -24,12 +24,12 @@ class ProfileDataManagerRemote: ProfileDataManagerProtocol {
             guard let data = data else { return }
             do {
                 let data = try JSONDecoder().decode(ProfileEntity.self, from: data)
-                DispatchQueue.main.async {
-                    completion(data)
-                }
+                completion(.success(data))
             } catch let error as NSError {
-                failure(error)
+                completion(.failure(error))
             }
         }
     }
+
+    func createUserProfile(completion: @escaping (Result<ProfileEntity, NSError>) -> Void) {}
 }

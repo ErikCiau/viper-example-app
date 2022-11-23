@@ -12,11 +12,29 @@ class ProfileInteractor: ProfileInteractorInputProtocol {
     var dataManager: ProfileDataManagerProtocol?
 
     func loadProfile() {
-        dataManager?.getUserProfile(completion: { profile in
-            self.presenter?.didLoadProfile(profile)
-        }, failure: { error in
-            // anything bussines logic for handle errors
-            fatalError("Error to load user")
+        dataManager?.getUserProfile(completion: { result in
+            switch result {
+            case let .success(profile):
+                DispatchQueue.main.async {
+                    self.presenter?.didLoadProfile(profile)
+                }
+            case let .failure(error):
+                fatalError(error.description)
+            }
+        })
+    }
+
+    func buildProfile() {
+        dataManager?.createUserProfile(completion: { result in
+            switch result {
+            case let .success(profile):
+                DispatchQueue.main.async {
+                    self.presenter?.didLoadBuildProfile(profile)
+                }
+            case let .failure(error):
+                fatalError(error.description)
+            }
+
         })
     }
 }

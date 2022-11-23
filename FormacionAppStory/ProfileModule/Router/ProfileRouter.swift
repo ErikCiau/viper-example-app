@@ -24,8 +24,9 @@ class ProfileRouter: ProfileRouterProtocol {
         presenter.interactor = interactor
         presenter.router = router
         interactor.presenter = presenter
-        interactor.dataManager = ProfileDataManagerRemote.shared // data manager with urlsession
+        // interactor.dataManager = ProfileDataManagerRemote.shared // data manager with urlsession
         // interactor.dataManager = ProfileDataManagerWithAlamofire.shared // data manager with alamofire
+        interactor.dataManager = ProfileDataManagerLocal.shared // data manager with core data for offiline data
 
         return view
     }

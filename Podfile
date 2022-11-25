@@ -6,5 +6,6 @@ target 'FormacionAppStory' do
 
   # Pods for FormacionAppStory
   pod 'Alamofire'
+  pod 'GRDB.swift'
 
 end

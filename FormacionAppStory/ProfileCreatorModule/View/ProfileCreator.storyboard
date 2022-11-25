@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile CreatorVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileCreatorVC" id="Y6W-OH-hqX" customClass="ProfileCreatorVC" customModule="FormacionAppStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registrar un nuevo usuario" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVc-kA-Ceo">
+                                <rect key="frame" x="16" y="0.0" width="262.5" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="35"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMK-2A-jkS">
+                                <rect key="frame" x="16" y="84" width="343" height="583"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EBa-fp-YnQ">
+                                        <rect key="frame" x="0.0" y="20" width="343" height="543"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNC-Hd-USx" userLabel="Primer nombre">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="7No-Ix-q9s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primer nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hd-gi-bAP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu primer nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z4i-72-M1r">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="37.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7No-Ix-q9s" secondAttribute="bottom" id="EUP-yg-aCP"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7No-Ix-q9s" secondAttribute="trailing" id="O7i-xC-W88"/>
+                                                    <constraint firstItem="7No-Ix-q9s" firstAttribute="top" secondItem="wNC-Hd-USx" secondAttribute="top" id="bJN-Pd-uIm"/>
+                                                    <constraint firstItem="7No-Ix-q9s" firstAttribute="leading" secondItem="wNC-Hd-USx" secondAttribute="leading" id="eVc-AT-wfG"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-pO-KMI" userLabel="segundo nombre">
+                                                <rect key="frame" x="0.0" y="69" width="343" height="59.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="EAO-8a-MdX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segundo nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwW-nP-Aik">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu segundo nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-f5-sQK">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="38"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="EAO-8a-MdX" secondAttribute="trailing" id="LiU-lO-egF"/>
+                                                    <constraint firstAttribute="bottom" secondItem="EAO-8a-MdX" secondAttribute="bottom" id="Ms7-7R-ve5"/>
+                                                    <constraint firstItem="EAO-8a-MdX" firstAttribute="top" secondItem="bfr-pO-KMI" secondAttribute="top" id="O69-99-LCH"/>
+                                                    <constraint firstItem="EAO-8a-MdX" firstAttribute="leading" secondItem="bfr-pO-KMI" secondAttribute="leading" id="eWR-ho-pVV"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx8-Wz-KjS" userLabel="apellido paterno">
+                                                <rect key="frame" x="0.0" y="138.5" width="343" height="59"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xng-5L-PD0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido paterno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lmr-Cj-Ru7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escriber tu primer apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-W8-LTS">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="37.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="xng-5L-PD0" firstAttribute="leading" secondItem="gx8-Wz-KjS" secondAttribute="leading" id="95w-zc-LxE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="xng-5L-PD0" secondAttribute="bottom" id="cVh-bM-7s5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="xng-5L-PD0" secondAttribute="trailing" id="fdb-zq-98W"/>
+                                                    <constraint firstItem="xng-5L-PD0" firstAttribute="top" secondItem="gx8-Wz-KjS" secondAttribute="top" id="zHu-qd-6qv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0D4-yT-1Vx" userLabel="apellido materno">
+                                                <rect key="frame" x="0.0" y="207.5" width="343" height="59"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Y5L-0I-r2C">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido materno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-6n-ZjN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu segundo apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fdR-62-fr0">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="37.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Y5L-0I-r2C" firstAttribute="leading" secondItem="0D4-yT-1Vx" secondAttribute="leading" id="09V-vC-7rx"/>
+                                                    <constraint firstItem="Y5L-0I-r2C" firstAttribute="top" secondItem="0D4-yT-1Vx" secondAttribute="top" id="6ce-Wh-lz0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Y5L-0I-r2C" secondAttribute="bottom" id="gAg-Yp-uRb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Y5L-0I-r2C" secondAttribute="trailing" id="h4S-dN-0oe"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hx8-vh-wC1" userLabel="curp">
+                                                <rect key="frame" x="0.0" y="276.5" width="343" height="59"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="hXt-xb-nzR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURP:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChG-cH-af7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu CURP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTb-pI-AMZ">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="37.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="hXt-xb-nzR" secondAttribute="trailing" id="PhT-VT-QXs"/>
+                                                    <constraint firstItem="hXt-xb-nzR" firstAttribute="leading" secondItem="hx8-vh-wC1" secondAttribute="leading" id="TEH-DU-BDZ"/>
+                                                    <constraint firstItem="hXt-xb-nzR" firstAttribute="top" secondItem="hx8-vh-wC1" secondAttribute="top" id="kD0-z1-k4O"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hXt-xb-nzR" secondAttribute="bottom" id="pq7-aJ-Uph"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDY-ed-TXk" userLabel="rfc">
+                                                <rect key="frame" x="0.0" y="345.5" width="343" height="59.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="IkR-IE-duN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RFC:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-S9-vzn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe tu RFC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jLd-N1-gFE">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="38"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="IkR-IE-duN" firstAttribute="top" secondItem="vDY-ed-TXk" secondAttribute="top" id="06R-dE-qga"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IkR-IE-duN" secondAttribute="trailing" id="L9l-0g-jDK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IkR-IE-duN" secondAttribute="bottom" id="f90-nt-wJe"/>
+                                                    <constraint firstItem="IkR-IE-duN" firstAttribute="leading" secondItem="vDY-ed-TXk" secondAttribute="leading" id="qp7-8u-Shv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-hk-bpE" userLabel="curriculum">
+                                                <rect key="frame" x="0.0" y="415" width="343" height="59"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="yJ0-fu-h37">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curriculum:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAM-Jt-XDb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="343" height="21.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escribe le link de tu curriculum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Keo-WX-j2k">
+                                                                <rect key="frame" x="0.0" y="21.5" width="343" height="37.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="yJ0-fu-h37" firstAttribute="top" secondItem="gxa-hk-bpE" secondAttribute="top" id="D3C-HF-0Dm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="yJ0-fu-h37" secondAttribute="trailing" id="G1X-qm-UHd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="yJ0-fu-h37" secondAttribute="bottom" id="uAx-b5-Sxv"/>
+                                                    <constraint firstItem="yJ0-fu-h37" firstAttribute="leading" secondItem="gxa-hk-bpE" secondAttribute="leading" id="vJX-tH-l6y"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFB-Ri-VpF">
+                                                <rect key="frame" x="0.0" y="484" width="343" height="59"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="   Agregar"/>
+                                                <connections>
+                                                    <action selector="createProfile:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XDL-Sj-l92"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EBa-fp-YnQ" firstAttribute="top" secondItem="PMK-2A-jkS" secondAttribute="top" constant="20" id="2iI-wU-Ezd"/>
+                                    <constraint firstItem="EBa-fp-YnQ" firstAttribute="leading" secondItem="PMK-2A-jkS" secondAttribute="leading" id="RCz-Gz-cLp"/>
+                                    <constraint firstAttribute="bottom" secondItem="EBa-fp-YnQ" secondAttribute="bottom" constant="20" id="RYA-xl-stE"/>
+                                    <constraint firstAttribute="trailing" secondItem="EBa-fp-YnQ" secondAttribute="trailing" id="ucW-jk-DXk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PMK-2A-jkS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="6Hl-LF-e3d"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PMK-2A-jkS" secondAttribute="trailing" constant="16" id="RKw-M5-SMt"/>
+                            <constraint firstItem="UVc-kA-Ceo" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="TYK-zt-yQr"/>
+                            <constraint firstItem="UVc-kA-Ceo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="cHd-3Y-3Fa"/>
+                            <constraint firstItem="UVc-kA-Ceo" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="0.7" id="l69-eB-A58"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PMK-2A-jkS" secondAttribute="bottom" id="rwz-q6-9ja"/>
+                            <constraint firstItem="PMK-2A-jkS" firstAttribute="top" secondItem="UVc-kA-Ceo" secondAttribute="bottom" id="wke-jq-lbb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="curpTextField" destination="NTb-pI-AMZ" id="Efh-EX-yU0"/>
+                        <outlet property="curriculumLinkTextField" destination="Keo-WX-j2k" id="P60-hr-JSv"/>
+                        <outlet property="fatherNameTextField" destination="Cmb-W8-LTS" id="Dlm-co-tra"/>
+                        <outlet property="firstNameTextField" destination="Z4i-72-M1r" id="UO7-RK-ehu"/>
+                        <outlet property="motherNameTextField" destination="fdR-62-fr0" id="KyU-Gg-XPa"/>
+                        <outlet property="rfcTextField" destination="jLd-N1-gFE" id="map-BW-BRG"/>
+                        <outlet property="secondNameTextField" destination="jcy-f5-sQK" id="dP2-Zt-6LS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83.206106870229007" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
